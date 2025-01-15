@@ -2,6 +2,7 @@ package com.inharetance;
 
 public class ChildClass extends Animal {
 	String color="red";
+	String color1="Pink";
 	
 	void colorname()
 	{
