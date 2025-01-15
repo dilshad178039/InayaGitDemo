@@ -2,33 +2,32 @@ package com.inaya;
 
 public class Constructor {
 	
-	int id;
 	String name;
-	static String compnany;
-	double salary;
+	String company;
+	int no;
+	int salary;
 	
-	public Constructor(int id, String name, String company,double salary)
 	
-	{
-		this.id=id;
-		this.name=name;
-		this.compnany=compnany;
-		this.salary=salary;
-		
-		
+	
+
+	public Constructor(String name, String company, int no, int salary) {
+		super();
+		this.name = name;
+		this.company = company;
+		this.no = no;
+		this.salary = salary;
 	}
-	
-	public void display()
+
+	public void display(int id, String company)
 	{
-		System.out.println("Employee details is: "+ id +" "+ name +" "+ compnany +" "+ salary);
+		System.out.println("Employee details is: "+ id +" "+ name +" "+ company +" "+ salary);
 	}
 	
 	public static void main(String[] args) {
-		Constructor sc=new Constructor(30606, "Dilshad", "Syne", 85000);
-		Constructor sc1=new Constructor(178035, "Dilshad", "CG", 28000);
+		Constructor sc=new Constructor("Dilshad", "Syne", 85000, 30606);
+		Constructor sc1=new Constructor("Dilshad", "CG",178035,  28000);
 		
-		sc.display();
-		sc1.display();
+		sc.display(30606, "Dilshad");
 		
 	}
 
